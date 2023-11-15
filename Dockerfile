@@ -15,4 +15,4 @@ RUN npm run build --prod
 ### STAGE 2:RUN ###
 FROM nginx:alpine 
 
-COPY --from=node /frontend-ski/dist/angular-product-config /usr/share/nginx/htm
+COPY --from=node /dist/frontend-ski /usr/share/nginx/htm
